@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca CRAI - USAM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header y Navegación -->
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <div class="logo-placeholder">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="logo-text">
+            <h1>Biblioteca CRAI</h1>
+            <p>USAM</p>
+          </div>
+        </div>
+
+        <button class="toggle-btn" id="toggleMenu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li><a href="#about" class="nav-link">¿Qué es CRAI?</a></li>
+            <li><a href="#services" class="nav-link">Servicios</a></li>
+            <li><a href="#team" class="nav-link">Nuestro Equipo</a></li>
+            <li>
+              <a href="#digital" class="nav-link">Bibliotecas Digitales</a>
+            </li>
+            <li><a href="#contact" class="nav-link">Contactos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section con Carousel -->
+    <section class="hero" id="inicio">
+      <div class="carousel">
+        <div
+          class="carousel-slide active"
+          style="background-image: url('img/1.jpeg')"
+        >
+          <div class="carousel-content">
+            <h2>Computadoras</h2>
+            <p>
+              Acceso a equipos de última generación para investigación y estudio
+            </p>
+          </div>
+        </div>
+        <div class="carousel-slide" style="background-image: url('img/2.jpeg')">
+          <div class="carousel-content">
+            <h2>Cubículos</h2>
+            <p>
+              Espacios privados para estudio individual o en grupos pequeños
+            </p>
+          </div>
+        </div>
+        <div class="carousel-slide" style="background-image: url('img/3.jpeg')">
+          <div class="carousel-content">
+            <h2>Salas Lounge</h2>
+            <p>Áreas cómodas para descansar y leer de manera informal</p>
+          </div>
+        </div>
+        <div class="carousel-slide" style="background-image: url('img/4.jpeg')">
+          <div class="carousel-content">
+            <h2>Coworkings</h2>
+            <p>Espacios colaborativos para proyectos grupales</p>
+          </div>
+        </div>
+        <div class="carousel-slide" style="background-image: url('img/5.jpeg')">
+          <div class="carousel-content">
+            <h2>Área de Laptops</h2>
+            <p>
+              Zonas especialmente diseñadas para uso de computadoras portátiles
+            </p>
+          </div>
+        </div>
+        <div class="carousel-slide" style="background-image: url('img/6.jpeg')">
+          <div class="carousel-content">
+            <h2>Realidad Virtual</h2>
+            <p>Tecnología inmersiva para experiencias educativas únicas</p>
+          </div>
+        </div>
+        <div class="carousel-slide" style="background-image: url('img/7.jpeg')">
+          <div class="carousel-content">
+            <h2>Estudio Multimedia</h2>
+            <p>
+              Equipamiento profesional para producción de contenido audiovisual
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-indicators">
+          <div class="indicator active" data-slide="0"></div>
+          <div class="indicator" data-slide="1"></div>
+          <div class="indicator" data-slide="2"></div>
+          <div class="indicator" data-slide="3"></div>
+          <div class="indicator" data-slide="4"></div>
+          <div class="indicator" data-slide="5"></div>
+          <div class="indicator" data-slide="6"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ¿Qué es la Biblioteca CRAI? -->
+    <section id="about" class="fade-in">
+      <div class="section-title">
+        <h2>¿Qué es la Biblioteca CRAI - USAM?</h2>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            El Centro de Recursos para el Aprendizaje y la Investigación (CRAI)
+            de la Universidad Salvadoreña Alberto Masferrer es un espacio
+            innovador que integra servicios de biblioteca tradicional con
+            tecnologías de vanguardia para apoyar el proceso de
+            enseñanza-aprendizaje y la investigación académica.
+          </p>
+
+          <p>
+            Nuestro CRAI se compone de la Biblioteca documental tradicional y
+            siete áreas especializadas que ofrecen recursos tecnológicos
+            avanzados para satisfacer las necesidades de nuestra comunidad
+            universitaria.
+          </p>
+
+          <p>
+            El objetivo principal del CRAI es proporcionar un entorno que
+            fomente el aprendizaje colaborativo, la investigación
+            interdisciplinaria y el desarrollo de habilidades digitales
+            necesarias para el éxito académico y profesional.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <div class="logo-container">
+            <img
+              src="img/usam-profile.png"
+              alt="Logo Biblioteca CRAI - USAM"
+              class="crai-logo"
+            />
+            <div class="logo-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Servicios -->
+    <section id="services" class="fade-in">
+      <div class="section-title">
+        <h2>Nuestros Servicios</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <h3>Sistema de Reservas</h3>
+          <p>
+            Reserva en línea de cubículos, salas de estudio y equipos
+            especializados
+          </p>
+          <a href="https://reservas-biblioteca.usam.edu.sv" target="_blank" class="service-link">
+            Acceder al Sistema
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Biblioteca Virtual (Koha)</h3>
+          <p>Acceso al catálogo en línea de nuestra colección bibliográfica</p>
+          <a href="https://biblioteca.usam.edu.sv/" target="_blank" class="service-link">
+            Acceder al Sistema
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Repositorio Universitario (DSpace)</h3>
+          <p>
+            Acceso a la producción académica e investigativa de la universidad
+          </p>
+          <a href="https://repositorio.usam.edu.sv" target="_blank" class="service-link coming-soon">
+            Próximamente 2026
+            <i class="fas fa-clock"></i>
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>Asesoría Académica</h3>
+          <p>Orientación especializada en búsqueda de información y recursos</p>
+          <a href="mailto:solicitudes.crai@usam.edu.sv" class="service-link">
+            Solicitar Asesoría
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Biblioteca Virtual (Omeka-S)</h3>
+          <p>Sistema de gestión bibliotecaria integral (Próximo año)</p>
+          <a href="#" class="service-link coming-soon">
+            Próximamente
+            <i class="fas fa-rocket"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nuestro Equipo -->
+    <section id="team" class="fade-in">
+      <div class="section-title">
+        <h2>Nuestro Equipo</h2>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-photo">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="member-info">
+            <h3>Director CRAI</h3>
+            <p>Extensión: 358</p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <div class="member-photo">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <div class="member-info">
+            <h3>Coordinador Biblioteca</h3>
+            <p>Extensión: 240</p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <div class="member-photo">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="member-info">
+            <h3>Equipo de Soporte CRAI</h3>
+            <p>Extensión: 327</p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <div class="member-photo">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <div class="member-info">
+            <h3>Asesores Académicos</h3>
+            <p>Disponibles en horario de atención</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Biblioteca Digital -->
+    <section id="digital" class="digital-libraries fade-in">
+      <div class="section-title">
+        <h2>Bibliotecas Digitales</h2>
+      </div>
+
+      <div class="image-stack-container">
+        <div class="stack-wrapper">
+          <div class="stack-item active" data-index="0">
+            <a
+              href="https://www.ebsco.com/"
+              target="_blank"
+              class="library-link"
+            >
+              <img src="img/ebsco.png" alt="EBSCO Host" class="stack-logo" />
+            </a>
+            <div class="stack-overlay">
+              <h3>EBSCO Host</h3>
+              <p>Base de datos académica multidisciplinaria</p>
+            </div>
+          </div>
+          <div class="stack-item" data-index="1">
+            <a
+              href="https://www.elibro.com/"
+              target="_blank"
+              class="library-link"
+            >
+              <img src="img/elibro.png" alt="eLibro.net" class="stack-logo" />
+            </a>
+            <div class="stack-overlay">
+              <h3>eLibro.net</h3>
+              <p>Plataforma de libros electrónicos en español</p>
+            </div>
+          </div>
+          <div class="stack-item" data-index="2">
+            <a
+              href="http://redicces.org.sv/"
+              target="_blank"
+              class="library-link"
+            >
+              <img src="img/redicces.png" alt="Redicces" class="stack-logo" />
+            </a>
+            <div class="stack-overlay">
+              <h3>Redicces</h3>
+              <p>Repositorio de documentos centroamericanos</p>
+            </div>
+          </div>
+          <div class="stack-item" data-index="3">
+            <a
+              href="https://www.research4life.org/"
+              target="_blank"
+              class="library-link"
+            >
+              <img
+                src="img/research4life.png"
+                alt="Research4Life"
+                class="stack-logo"
+              />
+            </a>
+            <div class="stack-overlay">
+              <h3>Research4Life</h3>
+              <p>Acceso a investigaciones científicas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack-controls">
+          <button class="stack-prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="stack-indicators">
+            <span class="stack-indicator active" data-index="0"></span>
+            <span class="stack-indicator" data-index="1"></span>
+            <span class="stack-indicator" data-index="2"></span>
+            <span class="stack-indicator" data-index="3"></span>
+          </div>
+          <button class="stack-next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contactos -->
+    <section id="contact" class="fade-in">
+      <div class="section-title">
+        <h2>Contactos</h2>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Biblioteca CRAI</h3>
+              <p>Extensión: 327</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Biblioteca Documental</h3>
+              <p>Extensión: 240</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Director Biblioteca CRAI</h3>
+              <p>Extensión: 358</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Correo Electrónico</h3>
+              <p>biblioteca.crai@usam.edu.sv</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Horario de Atención</h3>
+              <p>Lunes a Viernes: 7:00 AM - 8:00 PM</p>
+              <p>Sábados: 8:00 AM - 12:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <div
+            style="
+              width: 100%;
+              height: 100%;
+              background-color: var(--light-color);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <div class="contact-map">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.2615165159696!2d-89.20329662588425!3d13.702604698432573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6330f295544717%3A0x4c3f29b822e8ad9c!2sUniversidad%20Salvadore%C3%B1a%20Alberto%20Masferrer!5e0!3m2!1ses!2ssv!4v1764282062431!5m2!1ses!2ssv" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Ubicación de la Universidad Salvadoreña Alberto Masferrer">
+                    </iframe>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Misión</h3>
+          <p>
+            Proveer recursos y servicios de información de calidad que apoyen
+            los procesos de enseñanza, aprendizaje e investigación de la
+            comunidad universitaria, fomentando el desarrollo integral de
+            nuestros estudiantes.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Visión</h3>
+          <p>
+            Ser el centro de recursos para el aprendizaje y la investigación de
+            referencia nacional, reconocido por nuestra innovación,
+            accesibilidad y contribución al desarrollo académico y científico.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contacto</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Universidad Salvadoreña
+            Alberto Masferrer
+          </p>
+          <p><i class="fas fa-phone"></i> PBX: (503) 2231-9600</p>
+          <p><i class="fas fa-envelope"></i> solicitudes.crai@usam.edu.sv</p>
+
+          <div class="social-links">
+            <a href="#" class="social-link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Logos Institucionales</h3>
+            <div class="university-logos">
+                <div class="university-logo">
+                    <img src="img/usam-profile.png" alt="Universidad Salvadoreña Alberto Masferrer" class="footer-logo">
+                </div>
+                <div class="university-logo">
+                    <img src="img/acreditacion.png" alt="Biblioteca CRAI" class="footer-logo">
+                </div>
+                <div class="university-logo">
+                    <img src="img/mta.png" alt="Biblioteca USAM" class="footer-logo">
+                </div>
+                <div class="university-logo">
+                    <img src="img/mos.png" alt="Investigación USAM" class="footer-logo">
+                </div>
+                <div class="university-logo">
+                    <img src="img/riev.png" alt="Educación USAM" class="footer-logo">
+                </div>
+            </div>
+        </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Biblioteca CRAI - Universidad Salvadoreña Alberto
+          Masferrer. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="functions.js"></script>
+  </body>
+</html>
